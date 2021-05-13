@@ -1,0 +1,137 @@
+It automatically calls when we crate the object
+
+/*.........................................Type of Constructor.....................................*/
+
+1.Default Constuctor
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Student
+{
+    int id;
+    string s1;
+
+public:
+    Student()
+    {
+        id = 2;
+        s1 = "Sfjkd";
+    };
+    void print()
+    {
+        cout << id << " " << s1 << endl;
+    }
+};
+
+int main()
+{
+    Student s1;
+    s1.print();
+}
+
+/*,...................................................Parametarized Constructor................................................*/
+/* ...............Constructor Overloading..................*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Student
+{
+    int x;
+    int y;
+
+public:
+    Student(int a, int b)
+    {
+        x = a;
+        y = b;
+    }
+    Student(int a)
+    {
+        x = a;
+        y = 300;
+    }
+    void print()
+    {
+        cout << x << " " << y << endl;
+    }
+};
+
+int main()
+{
+    Student s1(2, 3), s2(87);
+    s2.print();
+}
+
+
+
+/*.................If you take the same variable name as it present it the calss variablr .........................*/
+
+class Student
+{
+    int x;
+    int y;
+
+public:
+    Student(int x, int y)
+    {
+        (*this).x = x;
+        (*this).y = y;
+    }
+    void print()
+    {
+        cout << x << " " << y << endl;
+    }
+};
+
+/*.....................If you have to pass the only one value through parametarized constructor you can also write like this ..............................*/
+
+Student s1(2);
+Studetn s1 = 2;
+
+/*................Concept of Default Constructor ..............................*/
+
+class A
+{
+    int a;
+    int b;
+
+public:
+    A(int x, int y)
+    {
+        a = x;
+        b = y;
+    }
+    A() // Default Constructor
+    {
+    }
+    void print()
+    {
+        cout << a << " " << b << endl;
+    }
+};
+
+int main()
+{
+    A a(2, 3), a2;
+    a.print();
+    a2.print();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
