@@ -1,0 +1,53 @@
+
+/* You can't able to access the private member from the outside of the class */
+
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Student
+{
+    int id;
+    string s1;
+
+public:
+    void give();
+};
+
+// When you want to write the function outside
+void Student::give()
+{
+    cout << id << " " << s1 << endl;
+}
+int main()
+{
+    Student s1;
+    s1.give();
+}
+
+.......................................................................................................................
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Student
+{
+    int id;
+    string s1;
+
+public:
+    void give()
+    {
+         id = 2;
+         s1 = "Anit"
+        cout << id << " " << s1 << endl;
+    }
+};
+
+int main()
+{
+    Student s1;
+    s1.give();
+}
