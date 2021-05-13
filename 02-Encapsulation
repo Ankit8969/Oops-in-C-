@@ -1,0 +1,24 @@
+It means binding the data member and the member function is called Encapsulation.
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Student
+{
+    int id;
+    string s1;
+
+public:
+   void give()
+{
+    cout << id << " " << s1 << endl;
+}
+};
+
+
+int main()
+{
+    Student s1;
+    s1.give();
+}
