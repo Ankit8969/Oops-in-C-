@@ -1,0 +1,40 @@
+It means Inherite the other class function to the other function classs
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Student
+{
+    int id;
+    string s1;
+
+public:
+    void give();
+};
+
+void Student::give()
+{
+	id =2;
+	s1 = "Ankit"
+    cout << id << " " << s1 << endl;
+}
+
+
+class Teacher:public Student,public ForMoreClass-Write Like this
+{
+	public:
+		int ind1;
+	void solve()
+	{
+		cout<<"INherit"<<endl;
+	}
+};
+
+
+// By this method we can use the other class variable
+
+int main()
+{
+    Teacher t1;
+	cout<<t1.s1<<endl;
+}
