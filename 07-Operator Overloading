@@ -1,4 +1,5 @@
-
+> when as operator is overloaded with multiple jobs,it is known as operator overloading.
+> It is a way to implement compile time polymorphism.
 
 /* We can use any valid operator which we use in c language */
 +,-,*,/,^,&,|| etc.
