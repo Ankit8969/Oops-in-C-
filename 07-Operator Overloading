@@ -4,6 +4,7 @@
 /* We can use any valid operator which we use in c language */
 +,-,*,/,^,&,|| etc.
 
+. we can't use sizeof or conditional operator.
 
 
 class Complex
