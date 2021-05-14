@@ -1,0 +1,44 @@
+
+Copy constructor is used when we pass a object type variable in a constructor
+
+
+
+
+
+
+
+
+
+
+class A
+{
+    int a;
+    int b;
+
+public:
+    A(int x, int y)
+    {
+        a = x;
+        b = y;
+    }
+    A() // Default Constructor
+    {
+    }
+	A(A &c)	   // Copy Constructor							       
+    {
+        a = c.a;
+        b = c.b;
+    }
+    void print()
+    {
+        cout << a << " " << b << endl;
+    }
+};
+
+int main()
+{
+    A a(2, 3), a2;
+    A b(a);
+
+    b.print();
+}
