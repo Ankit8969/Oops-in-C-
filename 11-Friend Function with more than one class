@@ -1,0 +1,46 @@
+> Friend Function can become friend to more than one class.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+// Formal Declaration
+class Complex2;
+
+class Complex1
+{
+    int a;
+
+public:
+    void setData(int a)
+    {
+        (*this).a = a;
+    }
+    friend void sum(Complex1, Complex2);
+};
+
+class Complex2
+{
+    int b;
+
+public:
+    void setData(int b)
+    {
+        (*this).b = b;
+    }
+    friend void sum(Complex1, Complex2);
+};
+
+void sum(Complex1 A, Complex2 B)
+{
+    cout << "Sum is " << A.a + B.b << endl;
+}
+
+int main()
+{
+    Complex1 c1;
+    c1.setData(12);
+    Complex2 c2;
+    c2.setData(14);
+
+    sum(c1, c2);
+}
