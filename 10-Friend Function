@@ -1,0 +1,43 @@
+> Friend Function is not a member function of a class to which it is a friend
+> Friend function is declared in the class with friend keyword
+> It must be defined outside the class to which it is friend
+> Friend function can access any member of the class to which it is friend
+> Friend Function can't access members of the class directly 
+> It has no caller object. c1.fun();
+> It should not be defined with membership label. (Complex::fun()).
+
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Complex
+{
+    int a, b;
+
+public:
+    void setData(int a, int b)
+    {
+        (*this).a = a;
+        (*this).b = b;
+    }
+    void showData()
+    {
+        printf("a = %d b = %d \n", a, b);
+    }
+    friend void sum(Complex);
+};
+
+void sum(Complex c)
+{
+    cout << "Sum is " << c.a + c.b << endl;
+}
+
+int main()
+{
+    Complex c1;
+    c1.setData(2, 4);
+    c1.showData();
+    sum(c1);
+}
