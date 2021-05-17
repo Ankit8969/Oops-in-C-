@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Complex
+{
+    int a, b;
+
+public:
+    void setData(int x, int y)
+    {
+        a = x;
+        b = y;
+    }
+    void showData()
+    {
+        cout << a << " " << b << endl;
+    }
+    friend Complex operator-(Complex);
+};
+
+Complex operator-(Complex c)
+{
+    Complex temp;
+    temp.a = -c.a;
+    temp.b = -c.b;
+    return temp;
+}
+
+int main()
+{
+    Complex c1, c2, c3;
+    c1.setData(5, 4);
+
+    // minus operator call hua us me c1 pass keya
+    // c2 = operator-(c1);
+    c2 = -c1;
+    c2.showData();
+}
