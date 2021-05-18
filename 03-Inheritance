@@ -1,4 +1,94 @@
+Types of Inheritance
+> Single Inehritance
+> Mulitlevel Inheritance
+> Multiple Inheritance
+> Hierachical Inheritance
+> Hybrid Inheritance
+
 It means Inherite the other class function to the other function classs
+
+/* Single Inheritance */
+class A
+{
+};
+class B:public A
+{
+};
+
+/* Multi level Inheritance */
+class A
+{
+};
+class B:public A
+{
+};
+class C:public B
+{
+};
+
+/* Multiple Inheritance */
+class A1
+{
+};
+class A2
+{
+};
+class B:public A1,public A2
+{
+};
+
+/* Hierarchical Inheritance */
+/* having one parent class and two other class conected with that */
+class A
+{
+};
+class B1:public A
+{
+};
+class B2:public A
+{
+};
+
+
+/*.............................................Important Concept ....................*/
+
+> VISITBILITY MODE IN INHERITANCE
+If the class has three type of data 
+class A
+{
+public:
+int x;
+private :
+int y;
+protected :
+int z;
+}
+
+and we have one more class by using which we have to inherit the class A
+
+# We have available all the data but we can't access all the data
+# We can access the only protected and public data
+
+class B: private A
+{
+	protected and public data both become private
+}
+
+class B: protected A
+{
+	protected and public data both become protected
+}
+
+class B: private A
+{
+	protected data are still protected
+	and public data  are still public
+}
+
+
+/*................................................................................*/
+
+
 
 #include <bits/stdc++.h>
 using namespace std;
