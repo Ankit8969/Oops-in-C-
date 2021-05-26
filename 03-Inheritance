@@ -79,7 +79,7 @@ class B: protected A
 	protected and public data both become protected
 }
 
-class B: private A
+class B: public A
 {
 	protected data are still protected
 	and public data  are still public
