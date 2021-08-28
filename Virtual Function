@@ -1,0 +1,34 @@
+class A
+{
+public:
+    virtual void f1()
+    {
+        cout << "Class A fun1" << endl;
+    }
+    void f2()
+    {
+        cout << "Class A fun2" << endl;
+    }
+};
+
+class B : public A
+{
+public:
+    void f1()
+    {
+        cout << "Class B fun1 " << endl;
+    }
+    void f2(int x)
+    {
+        cout << "Class B " << x << endl;
+    }
+};
+
+void solve()
+{
+    A *ptr, obj1;
+    B obj2;
+
+    ptr = &obj2;
+    ptr->f1();
+}
