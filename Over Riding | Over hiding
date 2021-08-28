@@ -1,0 +1,33 @@
+class A
+{
+public:
+    void f1()
+    {
+        cout << "Class A fun1" << endl;
+    }
+    void f2()
+    {
+        cout << "Class A fun2" << endl;
+    }
+};
+
+class B : public A
+{
+public:
+    void f1()
+    {
+        cout << "Class B fun1 " << endl;
+    }
+    void f2(int x)
+    {
+        cout << "Class B " << x << endl;
+    }
+};
+
+void solve()
+{
+    B obj;
+    obj.f1();   // Over Riding Function
+    obj.f2();   // Gives Error
+    obj.f2(3);  // Over Hiding
+}
