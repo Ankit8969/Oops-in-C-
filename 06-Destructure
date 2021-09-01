@@ -9,7 +9,9 @@
 /*......We we use destructor.........*/
 > It should be defined to release resources allocated to an object.
 
+// 
 
+Destructure is used to release the memory of object;
 
 class Complex
 {
