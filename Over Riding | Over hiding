@@ -1,3 +1,9 @@
+>  Function Over-Riding : feature that allows us to use a function in the child class that is already present in its parent class
+
+
+
+
+
 class A
 {
 public:
