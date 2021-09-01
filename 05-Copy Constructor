@@ -1,7 +1,4 @@
-
-Copy constructor is used when we pass a object type variable in a constructor
-
-
+A copy constructor is a member function that initializes an object using another object of the same class. 
 
 
 
