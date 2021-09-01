@@ -7,6 +7,7 @@
 > It should not be defined with membership label. (Complex::fun()).
 
 
+> A friend function is a function that is declared outside a class, but is capable of accessing the private and protected members of class
 
 
 #include <bits/stdc++.h>
