@@ -1,4 +1,6 @@
+Constructor is a special type of member function whose name is same as the class name.
 It automatically calls when we crate the object
+Constructor we generally used to initilize values.
 
 /*.........................................Type of Constructor.....................................*/
 
